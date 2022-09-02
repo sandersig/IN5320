@@ -42,3 +42,11 @@
 .center{
     text-align: center;
 }
+
+.cross-button {
+    color: red;
+    padding: 0.5em;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
