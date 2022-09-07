@@ -50,3 +50,7 @@
     background: none;
     cursor: pointer;
 }
+
+.population {
+    padding-left: 0.5em;
+}
