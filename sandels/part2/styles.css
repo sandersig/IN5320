@@ -1,0 +1,11 @@
+.cross-button {
+    color: rgb(202, 37, 37);
+    padding: 0.5em;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.population {
+    padding-left: 0.5em;
+}

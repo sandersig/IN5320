@@ -4,7 +4,7 @@ const append_item = async () => {
     var country = document.getElementById("country");
     var textnode = document.createTextNode(country.value);
 
-    const pop = await getPopulation(country.value);
+    var pop = await getPopulation(country.value);
     var popnode = document.createElement("span");
     popnode.innerText = "- " + pop;
     popnode.setAttribute("class", "population");
@@ -41,14 +41,12 @@ const filter_list = () => {
     var list_items = list.getElementsByTagName("li");
     var matches = find_matches(Array.from(list_items).map(element => element.innerText), search.value);
 
+    //Remove the elements that doesn't exist in matches
     for (i = 0; i < list_items.length; i++) {
         if (matches.includes(list_items[i].innerText)) {
             list_items[i].style.display = "";
           } else {
             list_items[i].style.display = "none";
           }
-    }
-    
+    }   
 }
-
-
