@@ -1,6 +1,6 @@
 import React from "react";
 import { useDataQuery } from '@dhis2/app-runtime'
-import { Menu, MenuItem, Table, TableHead, TableBody, TableCell, TableRowHead, TableRow, TableCellHead } from '@dhis2/ui'
+import { CircularLoader, Menu, MenuItem, Table, TableHead, TableBody, TableCell, TableRowHead, TableRow, TableCellHead } from '@dhis2/ui'
 import { useState} from "react";
 import "./Datasets.css";
 
@@ -24,7 +24,7 @@ export function Datasets() {
         }
     
         if (loading) {
-            return <span>Loading...</span>
+            return <CircularLoader large />
         }
 
         const handleClick = (s) => {
