@@ -1,0 +1,14 @@
+.row{
+    display:flex;
+}
+
+.menu{
+    width: 30%;
+}
+
+.table{
+    flex: auto;
+    height: 10%;
+    width: 70%;
+    table-layout: fixed;
+}
