@@ -73,7 +73,7 @@ export function Datasets() {
             );
           }else {
             return (
-            <div className="menu">
+            <div>
               <Menu>
                 {data.request0.dataSets.map((dataset) => (
                   <MenuItem onClick={() => handleClick(dataset.displayName)} key={dataset.id} label={dataset.displayName} />
